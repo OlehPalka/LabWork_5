@@ -1,12 +1,10 @@
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerBucketTest {
     private FlowerBucket bucket;
 
-    @BeforeEach
+    @org.junit.jupiter.api.BeforeEach
     void setUp() {
         Flower tulip = new Flower(FlowerType.Tulip);
         tulip.setPrice(10);
@@ -25,12 +23,12 @@ class FlowerBucketTest {
         bucket.AddPack(pack_2);
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void addPack() {
         assertEquals(2, bucket.getFlowerPacks().size());
     }
 
-    @Test
+    @org.junit.jupiter.api.Test
     void getPrice() {
         assertEquals(200, bucket.getPrice());
     }
