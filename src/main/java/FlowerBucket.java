@@ -1,9 +1,10 @@
 import lombok.Data;
+import lombok.ToString;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Data @ToString
 public class FlowerBucket {
     List<FlowerPack> flowerPacks = new ArrayList<FlowerPack>();
 
