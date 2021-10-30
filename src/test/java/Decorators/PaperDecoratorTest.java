@@ -1,0 +1,25 @@
+package Decorators;
+
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
+import store.Flower;
+import store.FlowerType;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class PaperDecoratorTest {
+
+    private static Item decorator;
+
+    @BeforeAll
+    static void beforeAll() {
+        Flower flower = new Flower(FlowerType.Tulip);
+        flower.setPrice(20);
+        decorator = new PaperDecorator(flower);
+    }
+
+    @Test
+    void getPrice() {
+        assertEquals(33, decorator.getPrice());
+    }
+}

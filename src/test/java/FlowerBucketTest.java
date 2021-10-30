@@ -1,4 +1,9 @@
 
+import store.Flower;
+import store.FlowerBucket;
+import store.FlowerPack;
+import store.FlowerType;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FlowerBucketTest {

@@ -1,11 +1,15 @@
-import lombok.Data;
+package store;
+
+import Decorators.Item;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.util.Arrays;
 
-@Data
+@Getter @Setter
 @ToString
-public class Flower {
+public class Flower extends Item {
     private double price;
     private double sepal_length;
     private int[] color;
@@ -17,5 +21,10 @@ public class Flower {
 
     public Flower(FlowerType flowerType) {
         this.flowerType = flowerType;
+    }
+
+    @Override
+    public void getDescription() {
+        System.out.println(this);
     }
 }
