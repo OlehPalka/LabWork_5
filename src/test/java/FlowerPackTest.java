@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import store.Flower;
+import store.FlowerPack;
+import store.FlowerType;
 
 import static org.junit.jupiter.api.Assertions.*;
 
