@@ -15,7 +15,7 @@ public class Main {
         PayPalPayment paypal = new PayPalPayment();
         List<Item> items = new ArrayList<>();
         items.add(flower);
-        flower.setPrice(15);
+        flower.setPrice(10);
         RibbonDecorator ribbon_flower = new RibbonDecorator(flower);
         System.out.println(ribbon_flower.getPrice());
         dhl.deliver(items);
